@@ -155,3 +155,16 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.title-images {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.title-images img {
+  height: 70px;   /* Force same height */
+  width: auto;     /* Keep aspect ratio */
+}
