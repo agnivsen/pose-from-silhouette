@@ -1,4 +1,4 @@
-# Globally Optimal Pose from Orthographic Silhouettes
+# [Globally Optimal Pose from Orthographic Silhouettes](https://agnivsen.github.io/pose-from-silhouette/)
 
 Agniva Sengupta ¹ ², Dilara Kuş ¹ ², Jianning Li ², Stefan Zachow ²  
 
