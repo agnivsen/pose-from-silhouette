@@ -147,7 +147,7 @@ Zuse Institute Berlin / Freie Universität Berlin
 
 sengupta@zib.de; agniva.sengupta@fu-berlin.de
 
-For questions or issues, please open a GitLab issue or reach out directly.
+For questions or issues, please open a GitHub issue or reach out directly.
 
 ---
 
