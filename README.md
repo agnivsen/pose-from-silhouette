@@ -12,9 +12,9 @@ Agniva Sengupta ¹ ², Dilara Kuş ¹ ², Jianning Li ², Stefan Zachow ²
 
 This repository contains the official MATLAB implementation of:
 
-**Globally Optimal Pose from Orthographic Silhouettes (CVPR 2026)**
+**[Globally Optimal Pose from Orthographic Silhouettes](https://agnivsen.github.io/pose-from-silhouette/) (CVPR 2026)**
 
-(Selected as a **_highlight_** at IEEE/CVF CVPR 2026)
+(Selected as a **_highlight_** at [IEEE/CVF CVPR 2026](https://cvpr.thecvf.com/))
 
 We address the problem of estimating the 3D pose of known objects in ℝ³ from their unoccluded orthographic silhouettes. The method exploits the continuity of silhouette area over rotation space to enable globally optimal pose recovery.
 
@@ -120,11 +120,11 @@ Docs/Supplementary.pdf
 If you find this work useful, please cite:
 
 ```
-@article{sengupta2026pfs,
-author    = {Sengupta, Agniva and Kuş, Dilara and Li, Jianning and Zachow, Stefan},
-title     = {Globally Optimal Pose from Orthographic Silhouettes},
-journal   = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-year      = {2026},
+@inproceedings{sengupta2026pfs,
+  title={Globally Optimal Pose from Orthographic Silhouettes},
+  author={Sengupta, Agniva and Kuş, Dilara and Li, Jianning and Zachow, Stefan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2026}
 }
 ```
 
