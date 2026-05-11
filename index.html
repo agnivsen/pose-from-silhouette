@@ -60,7 +60,7 @@
     <div class="container is-max-desktop">
       <div class="column has-text-centered">
 
-        <h1 class="title is-2">
+        <!-- <h1 class="title is-3">
           Globally Optimal Pose from Orthographic Silhouettes 
         </h1>
 
@@ -73,19 +73,35 @@
           <sup>2</sup>Freie Universität Berlin
         </div>
 
-        <div class="title-images">
-          <img src="static/images/zib.jpg" alt="Zuse Institute Berlin logo">
-          <img src="static/images/Fub-logo.svg__0.png" alt="Freie Universität Berlin logo">
-        </div>
 
           <div class="title-images">
-            <img src="static/images/highlight.svg" alt="CVPR 2026 Highlight">
-          </div>
+            <img src="static/images/highlight.png" alt="CVPR 2026 Highlight">
+          </div> -->
+
+          <div style="position: relative;">
+
+  <h1 class="title is-3">
+    Globally Optimal Pose from Orthographic Silhouettes
+  </h1>
+
+  <div class="is-size-5 publication-authors">
+    Agniva Sengupta<sup>1,2</sup>, Dilara Kuş<sup>1,2</sup>,
+    Jianning Li<sup>1</sup>, Stefan Zachow<sup>1</sup>
+  </div>
+
+  <div class="is-size-6 publication-authors">
+  <sup>1</sup>Zuse Institute Berlin &
+  <sup>2</sup>Freie Universität Berlin
+
+  <img src="static/images/highlight.png"
+       alt="CVPR 2026 Highlight"
+       style="float:right; width:80px; height:auto;">
+</div>
+
+</div>
 
         <p style="margin-top: 1.5rem;">
-          <strong>Pose from Silhouettes</strong> is a method for <strong>3D pose estimation from silhouettes</strong>,
-          addressing the classical computer vision problem of estimating object pose from
-          <strong>orthographic silhouette projections</strong>. We introduce <strong>GlOptiPoS</strong>: a globally optimal approach for
+          <strong>Pose from Silhouettes</strong> is the problem of estimating a known object's 6 Degrees of Freedom (D<i>o</i>F) pose from its observed silhouettes - this article solves this problem under orthographic projection. We introduce <strong>GlOptiPoS</strong>: a globally optimal approach for
           <strong>silhouette-based pose estimation</strong>, applicable to arbitrary 3D shapes without
           correspondences, with applications in <strong>medical imaging</strong>,
           <strong>robotics</strong>, and <strong>augmented reality</strong>.
@@ -105,7 +121,7 @@
             <a href="https://github.com/agnivsen/pose-from-silhouette"
                class="external-link button is-normal is-rounded is-dark">
               <span class="icon"><i class="fab fa-github"></i></span>
-              <span>Code for 3D Pose Estimation from Silhouettes</span>
+              <span>Code Repository (GitHub)</span>
             </a>
           </span>
 
@@ -196,7 +212,99 @@
       3D reconstruction, global optimization, CVPR 2026
     </p>
   </div>
+
+  <div class="container is-max-desktop content">
+    <h2 class="title">Global optimality under orthographic projection</h2>
+    <p>
+      Building upon the framework of <a href="https://link.springer.com/article/10.1007/s11263-008-0186-9">Hartley and Kahl</a>, we introduce shape signatures of orthographic silhouettes that vary continuously with an object’s orientation, enabling non-trivial branching strategies that lead to solutions converging to global optima, up to discretisation. Concretely, We propose two intuitive yet powerful silhouette descriptors: the Area-of-Silhouettes (AoS) and the aspect ratio of ellipses fitted to the silhouettes; we show that they capture sufficient geometric information for accurate pose estimation. Orientation is recovered numerically, followed by a post-hoc non-linear refinement on the $\mathbb{SE}(3)$ manifold guaranteeing convergence to a solution that lies in close vicinity of the global optima, up to discretization.
+    </p>
+  </div>
+
+  <div class="container is-max-desktop content">
+    <h3 class="title">Representative results</h3>
+    <p>
+      Shown below are some randomly sampled results from the test objects Stanford Bunny (SB), Phlegmatic Dragon (PD), and Pelvic Bone (PB).
+    </p>
+  </div>
+  <div class="title-images" style="width: 100%;">
+    <img 
+      src="static/images/bunny.gif" 
+      alt="Bunny text" 
+      style="width: 700px !important; height: auto; display: block;">
+  </div>
+  <div class="title-images" style="width: 100%;">
+    <img 
+      src="static/images/dragon.gif" 
+      alt="Bunny text" 
+      style="width: 700px !important; height: auto; display: block;">
+  </div>
+    <div class="title-images" style="width: 100%;">
+    <img 
+      src="static/images/pelvis.gif" 
+      alt="Bunny text" 
+      style="width: 700px !important; height: auto; display: block;">    
+  </div>
+
+
+  <div class="container is-max-desktop content">
+    <h2 class="title">Perspective approximation</h2>
+    <p>
+      Assuming depth priors as input, the same solution methodology as above achieves near-optimal accuracy for perspective silhouettes, demonstrating strong practical performance while preserving an explainable, initialisation-free design. However, the perspective case is not guaranteed to converge to the vicinity of global minima. 
+    </p>
+  </div>
+
+
+
+  <div class="container is-max-desktop content">
+    <h3 class="title">Representative results</h3>
+    <p>
+      Shown below are some randomly sampled results from the asymmetric objects from the <a href="https://ar3dv.github.io/BCOT-Benchmark/">BCoT</a> dataset; the average accuracy remains high but being not globally optimal, failure cases do occur.
+
+    </p>
+  </div>
+
+<div style="position: relative; left: 50%; transform: translateX(-50%); width: max-content;">
+  <img 
+    src="static/images/ape.gif" 
+    alt="Ape text"
+    style="width: 520px; height: auto;"
+  >
+  <img 
+    src="static/images/cat.gif" 
+    alt="Cat text"
+    style="width: 520px; height: auto;"
+  >
+</div>
+
+<div style="position: relative; left: 50%; transform: translateX(-50%); width: max-content;">
+  <img 
+    src="static/images/jack.gif" 
+    alt="Ape text"
+    style="width: 520px; height: auto;"
+  >
+  <img 
+    src="static/images/squirrel.gif" 
+    alt="Cat text"
+    style="width: 520px; height: auto;"
+  >
+</div>
+
+<div style="position: relative; left: 50%; transform: translateX(-50%); width: max-content;">
+  <img 
+    src="static/images/stitch.gif" 
+    alt="Ape text"
+    style="width: 520px; height: auto;"
+  >
+  <img 
+    src="static/images/vq.gif" 
+    alt="Cat text"
+    style="width: 520px; height: auto;"
+  >
+</div>
+
 </section>
+
+
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
