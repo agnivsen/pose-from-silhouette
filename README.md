@@ -14,7 +14,7 @@ This repository contains the official MATLAB implementation of:
 
 **[Globally Optimal Pose from Orthographic Silhouettes](https://agnivsen.github.io/pose-from-silhouette/) (CVPR 2026)**
 
-(Selected as a **_highlight_** at [IEEE/CVF CVPR 2026](https://cvpr.thecvf.com/))
+(Selected as a **_highlight_** and **_award-candidate_** at [IEEE/CVF CVPR 2026](https://cvpr.thecvf.com/))
 
 We address the problem of estimating the 3D pose of known objects in ℝ³ from their unoccluded orthographic silhouettes. The method exploits the continuity of silhouette area over rotation space to enable globally optimal pose recovery.
 
